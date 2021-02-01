@@ -32,13 +32,14 @@ app.use(bodyParser.json());
 
 app.use(require('./routes/index'));
 
-//config global de rutas lo guardo para tener que arreglarlo
-//app.use(require('./routes/index'));
 
-//================================//
-//    esto deberia estar en rutas //
-//================================//
-
+// HABILITAR LA CARPETA PUBLIC
+//hay que usar un middleware de express
+const path = require('path');
+// AUN ASI NO VA A FUNCIONAAR HAY QUE AÑADIR UN PATH
+//app.use(express.static(__dirname + '../public')); <-- asi no funcionaria
+// el path resolve ayuda a que se genere bien el path
+app.use(express.static(path.resolve(__dirname, '../public')));
 
 
 

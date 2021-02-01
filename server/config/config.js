@@ -44,3 +44,10 @@ if (process.env.NODE_ENV === 'dev') {
 //urlDB = 'mongodb+srv://Mike:ZXzmzJGW0uxTNynR@cluster0.nwwgs.mongodb.net/test';
 
 process.env.URLDB = urlDB;
+
+
+//==============
+// Google Client ID
+//==============
+//para luego usarlo en el login
+process.env.CLIENT_ID = process.env.CLIENT_ID || '69000039080-lnp6ghplmh60cvpluk1vaod435ipnhh6.apps.googleusercontent.com';
