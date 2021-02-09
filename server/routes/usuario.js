@@ -73,7 +73,7 @@ app.get('/usuario', verificaToken, (req, res) => {
 
     //res.json('get usuario LOCAL');
 })
-app.post('/usuario', [verificaToken, verificaAdmin_Role], function(req, res) {
+app.post('/usuario', /*[verificaToken, verificaAdmin_Role],*/ function(req, res) {
 
 
     let body = req.body;
