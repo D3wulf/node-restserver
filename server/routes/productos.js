@@ -148,7 +148,7 @@ app.post('/productos', verificaToken, (req, res) => {
         precioUni: body.precioUni,
         descripcion: body.descripcion,
         disponible: body.disponible,
-        producto: body.producto
+        categoria: body.categoria
 
 
 

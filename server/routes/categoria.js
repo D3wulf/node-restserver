@@ -95,11 +95,8 @@ app.post('/categoria', verificaToken, (req, res) => {
     let body = req.body;
 
     let categoria = new Categoria({
-
-        nombre: body.nombre,
         descripcion: body.descripcion,
-
-
+        usuario: req.usuario._id
     });
 
     categoria.save((err, categoriaDB) => {
@@ -207,25 +204,10 @@ app.delete('/categoria/:id', verificaToken, (req, res) => {
 
         });
 
-
-    })
-
+    });
 
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 module.exports = app;
