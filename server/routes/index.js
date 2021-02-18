@@ -10,5 +10,6 @@ app.use(require('./login'));
 app.use(require('./categoria'));
 //app.use(require('./categoria));
 app.use(require('./productos'));
+app.use(require('./uploads'));
 
 module.exports = app;
